@@ -20,5 +20,6 @@ $factory->define(App\Car::class, function (Faker $faker) {
         'make' => $CarsArray[$random],
         'model' => $faker->company,
         'year' => $faker->year,
+        'year' => $faker->year($max = 'now'),
     ];
 });
